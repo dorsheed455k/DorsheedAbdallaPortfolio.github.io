@@ -6,6 +6,43 @@
 -->
 <html>
 	<head>
+	  <meta charset="UTF-8">
+	  <title>Your Page Title</title>
+	
+	  <style>
+	    .grid-3x3 {
+	      display: grid;
+	      grid-template-columns: repeat(3, 1fr);
+	      gap: 20px;
+	    }
+	
+	    .cm img {
+	      width: 100%;
+	      height: 220px;
+	      object-fit: cover;
+	      border-radius: 8px;
+	    }
+	
+	    .cm p {
+	      text-align: center;
+	      margin-top: 8px;
+	      font-size: 0.95rem;
+	    }
+	
+	    @media (max-width: 900px) {
+	      .grid-3x3 {
+	        grid-template-columns: repeat(2, 1fr);
+	      }
+	    }
+	
+	    @media (max-width: 500px) {
+	      .grid-3x3 {
+	        grid-template-columns: 1fr;
+	      }
+	    }
+	  </style>
+    </head>
+	<head>
 		<title>Ontario Tech Racing</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -54,45 +91,50 @@
             <header class="major">
                             <h2>Gallary</h2>
                         </header>
-                        <div class="rw">
-                            <div class="cm">
-                            <img src="images/Racing/1756773657902.jpeg" alt="Bottom" style="width:100%">
-                                <p style="text-align:center">Simulation View</p>
-                            </div>
-                            <div class="cm">
-                            <img src="images/Racing/1756773765320.jpeg" alt="Open" style="width:100%">
-                                <p style="text-align:center">Schematic</p>
-                            </div>
-                            <div class="cm">
-                            <img src="images/Racing/1756773876844.jpeg" alt="Exploded" style="width:100%">
-                                <p style="text-align:center">PCB View</p>
-                            </div>
-                           <div class="cm">
-                            <img src="images/Racing/1756774010449.jpeg" alt="Exploded" style="width:100%">
-                                <p style="text-align:center">Testing</p>
-                            </div>
-                          <div class="cm">
-                            <img src="images/Racing/PXL_20250615_124534601.jpg" alt="Exploded" style="width:100%">
-							   <p style="text-align:center">Team Custom Hardware</p>
-                            </div>
-                          <div class="cm">
-                            <img src="images/Racing/1756774023444.jpeg" alt="Exploded" style="width:100%">
-                                <p style="text-align:center">Finished Product</p>
-                            </div>
-                          <div class="cm">
-                            <img src="images/Racing/1759937330289.jpeg" alt="Exploded" style="width:100%">
-                            </div>
-                            <div class="cm">
-                            <img src="images/Racing/PXL_20250620_215800263.MP.jpg" alt="Exploded" style="width:100%">
-                            </div>
-                          <div class="cm">
-                            <img src="images/Racing/PXL_20250621_195031889.jpg" alt="Exploded" style="width:100%">
-                            </div>
-                        </div>
-                        
+                        <div class="rw grid-3x3">
+							  <div class="cm">
+							    <img src="images/Racing/1756773657902.jpeg" alt="Simulation View">
+							    <p>Simulation View</p>
+							  </div>
+							
+							  <div class="cm">
+							    <img src="images/Racing/1756773765320.jpeg" alt="Schematic">
+							    <p>Schematic</p>
+							  </div>
+							
+							  <div class="cm">
+							    <img src="images/Racing/1756773876844.jpeg" alt="PCB View">
+							    <p>PCB View</p>
+							  </div>
+							
+							  <div class="cm">
+							    <img src="images/Racing/1756774010449.jpeg" alt="Testing">
+							    <p>Testing</p>
+							  </div>
+							
+							  <div class="cm">
+							    <img src="images/Racing/PXL_20250615_124534601.jpg" alt="Team Custom Hardware">
+							    <p>Team Custom Hardware</p>
+							  </div>
+							
+							  <div class="cm">
+							    <img src="images/Racing/1756774023444.jpeg" alt="Finished Product">
+							    <p>Finished Product</p>
+							  </div>
+							
+							  <div class="cm">
+							    <img src="images/Racing/1759937330289.jpeg" alt="Extra Image">
+							  </div>
+							
+							  <div class="cm">
+							    <img src="images/Racing/PXL_20250620_215800263.MP.jpg" alt="Extra Image">
+							  </div>
+							
+							  <div class="cm">
+							    <img src="images/Racing/PXL_20250621_195031889.jpg" alt="Extra Image">
+							  </div>
 					</div>
-                          
-					</div>
+
 
 				<!-- Copyright -->
 					<div id="copyright">
