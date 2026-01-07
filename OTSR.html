@@ -8,16 +8,32 @@
 	<head>
 	  <meta charset="UTF-8">	
 	  <style>
-	    @media (max-width: 900px) {
-		  .grid-3x3 {
-		    grid-template-columns: repeat(2, 1fr);
-		  }
+	  /* Force neat 3x3 layout */
+		.rw.grid-3x3 {
+		  display: grid;
+		  grid-template-columns: repeat(3, 1fr);
+		  gap: 20px;
 		}
-
-		@media (max-width: 500px) {
-		  .grid-3x3 {
-		    grid-template-columns: 1fr;
-		  }
+		
+		/* override template float/flex column behavior */
+		.rw.grid-3x3 .cm {
+		  float: none !important;
+		  width: auto !important;
+		  margin: 0 !important;
+		}
+		
+		/* consistent image boxes */
+		.rw.grid-3x3 .cm img {
+		  width: 100%;
+		  height: 220px;
+		  object-fit: cover;
+		  display: block;
+		}
+		
+		/* captions */
+		.rw.grid-3x3 .cm p {
+		  text-align: center;
+		  margin: 8px 0 0;
 		}
 	  </style>
     </head>
@@ -70,7 +86,7 @@
             <header class="major">
                             <h2>Gallary</h2>
                         </header>
-                        <div class="rw">
+                        <div class="rw grid-3x3">
                             <div class="cm">
                             <img src="images/OTSR/1756777854961.jpeg" alt="Bottom" style="width:100%">
                                 <p style="text-align:center">Simulation View</p>
